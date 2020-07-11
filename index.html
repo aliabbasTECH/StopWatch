@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main">
+    <div class="watch-shell">
+        <div class="display" >
+          <h1 class="indisplay" id="min">00</h1>
+          <h1 class="indisplay"> : </h1>
+          <h1 class="indisplay" id="sec">00</h1>
+          <h1 class="indisplay"> : </h1>
+          <h1 class="indisplay" id="msec">00</h1>
+        </div>
+    
+        <div class="timer-butn">
+          <button class="btns-1" id="startbtn" onclick="start()">START</button>
+          <button class="btns-2" id="stopbtn" onclick="stop()">STOP</button>
+          <button class="btns-3" id="resetbtn" onclick="reset()">RESET</button>
+        </div>
+    </div>
+</div>
+<div class="space">
+</div>
+<div class="tab">
+<table class="t-watchdata" id="Wtable">
+    <tr class="row">
+        <th >NAME</th>
+        <th>STOPTIME</th>
+    </tr>
+    
+    <tr class="row">
+        <td>
+            <input  id="namein" type="text" value="" placeholder="enter name">
+            <button class="ts-btn" onclick="getname()" >SUBMIT</button>
+        </td>
+        <td id="data">00:00:00</td>
+    </tr>
+
+</table>
+</div>
+<div class="space2">
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
